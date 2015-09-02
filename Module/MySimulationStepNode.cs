@@ -27,6 +27,7 @@ namespace GoodAI.Modules.SimulationStepModule
             Output.Count = 1;
         }
 
+        public MySimulationStepTask StepTask { get; private set; }
     }
 
     /// <summary>
