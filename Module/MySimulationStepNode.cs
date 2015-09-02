@@ -8,7 +8,7 @@ using GoodAI.Core.Nodes;
 using GoodAI.Core.Task;
 using GoodAI.Core.Utils;
 
-namespace NewModuleWithSourceDeps
+namespace GoodAI.Modules.NewModuleWithSourceDeps
 {
     /// <summary>
     /// A node that provides the current simulation step number in the output block.
