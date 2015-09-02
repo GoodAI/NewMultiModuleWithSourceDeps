@@ -7,8 +7,8 @@
     <ProjectGuid>{8C381B5A-3FD7-4311-9C42-F8115587E5FD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GoodAI.SimulationStepModule</RootNamespace>
-    <AssemblyName>GoodAI.SimulationStepModule</AssemblyName>
+    <RootNamespace>GoodAI.NewModuleWithSourceDeps</RootNamespace>
+    <AssemblyName>GoodAI.NewModuleWithSourceDeps</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -45,7 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MySimulationStepNode.cs" />
+    <Compile Include="MyNewModuleNode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Versioning\MyConversion.cs" />
   </ItemGroup>
