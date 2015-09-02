@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,12 +8,14 @@ using GoodAI.Core.Memory;
 using GoodAI.Core.Nodes;
 using GoodAI.Core.Task;
 using GoodAI.Core.Utils;
+using YAXLib;
 
 namespace GoodAI.Modules.SimulationStepModule
 {
     /// <summary>
     /// A node that provides the current simulation step number in the output block.
     /// </summary>
+    [YAXSerializeAs("SimulationStep")]
     public class MySimulationStepNode : MyWorkingNode
     {
         [MyOutputBlock(0)]
@@ -21,6 +24,10 @@ namespace GoodAI.Modules.SimulationStepModule
             get { return GetOutput<uint>(0); }
             set { SetOutput(0, value); }
         }
+
+        [MyBrowsable, Category("Params")]
+        [YAXSerializableField(DefaultValue = (uint) 0), YAXElementFor("Params")]
+        public uint StartFrom { get; set; }
 
         public override void UpdateMemoryBlocks()
         {
@@ -41,7 +48,7 @@ namespace GoodAI.Modules.SimulationStepModule
 
         public override void Execute()
         {
-            Owner.Output.Host[0] = SimulationStep;
+            Owner.Output.Host[0] = SimulationStep + Owner.StartFrom;
             Owner.Output.SafeCopyToDevice();
         }
     }
