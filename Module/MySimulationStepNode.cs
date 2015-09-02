@@ -8,7 +8,7 @@ using GoodAI.Core.Nodes;
 using GoodAI.Core.Task;
 using GoodAI.Core.Utils;
 
-namespace GoodAI.Modules.NewModuleWithSourceDeps
+namespace GoodAI.Modules.SimulationStepModule
 {
     /// <summary>
     /// A node that provides the current simulation step number in the output block.
@@ -24,7 +24,7 @@ namespace GoodAI.Modules.NewModuleWithSourceDeps
 
         public override void UpdateMemoryBlocks()
         {
-            // No memory blocks are used in the node.
+            Output.Count = 1;
         }
 
     }

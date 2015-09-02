@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Configuration RootNamespace="GoodAI.Modules">
   <KnownNodes>
-    <Node type="GoodAI.Modules.NewModuleWithSourceDeps.SimulationStepNode" CanBeAdded="true"></Node>
+    <Node type="GoodAI.Modules.SimulationStepModule.MySimulationStepNode" CanBeAdded="true"/>
   </KnownNodes>
 </Configuration>
