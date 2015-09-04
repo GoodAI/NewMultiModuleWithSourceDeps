@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using GoodAI.Core.Configuration;
 
-namespace GoodAI.Modules.Versioning
+namespace MyCompany.Modules.Versioning
 {
     public class MyConversion: MyBaseConversion
     {
