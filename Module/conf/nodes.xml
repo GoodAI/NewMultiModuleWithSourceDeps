@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Configuration RootNamespace="GoodAI.Modules">
+<Configuration RootNamespace="MyCompany.Modules">
   <KnownNodes>
-    <Node type="GoodAI.Modules.NewModuleWithSourceDeps.MyNewModuleNode" CanBeAdded="true"/>
+    <Node type="MyCompany.Modules.NewModuleWithSourceDeps.NewModuleNode" CanBeAdded="true"/>
   </KnownNodes>
 </Configuration>

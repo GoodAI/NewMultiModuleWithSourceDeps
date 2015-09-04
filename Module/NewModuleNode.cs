@@ -10,14 +10,14 @@ using GoodAI.Core.Task;
 using GoodAI.Core.Utils;
 using YAXLib;
 
-namespace GoodAI.Modules.NewModuleWithSourceDeps
+namespace MyCompany.Modules.NewModuleWithSourceDeps
 {
     /// <author>GoodAI</author>
     /// <meta></meta>
     /// <status></status>
     /// <summary>A summary of the node's function</summary>
     /// <description>A more detailed description.</description>
-    public class MyNewModuleNode : MyWorkingNode
+    public class NewModuleNode : MyWorkingNode
     {
         [MyInputBlock(0)]
         public MyMemoryBlock<float> Input
@@ -41,13 +41,13 @@ namespace GoodAI.Modules.NewModuleWithSourceDeps
             Output.Count = 1;
         }
 
-        public MyNewModuleTask NewModuleTask { get; private set; }
+        public NewModuleTask NewModuleTask { get; private set; }
     }
 
     /// <summary>
     /// The task that pushes the current simulation step into the output block.
     /// </summary>
-    public class MyNewModuleTask : MyTask<MyNewModuleNode>
+    public class NewModuleTask : MyTask<NewModuleNode>
     {
         public override void Init(int nGPU)
         {
