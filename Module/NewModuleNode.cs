@@ -12,7 +12,7 @@ using YAXLib;
 
 namespace MyCompany.Modules.NewModuleWithSourceDeps
 {
-    /// <author>GoodAI</author>
+    /// <author>Ann Author</author>
     /// <meta></meta>
     /// <status></status>
     /// <summary>A summary of the node's function</summary>
