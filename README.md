@@ -23,7 +23,7 @@ Rename **ModuleOne** to **NiceExampleModule**.
 
 The Node project is located in **NiceExampleModule**\Module, the CUDA kernels are in **NiceExampleModule**\Cuda
 
-1. Open the NewModuleWithSourceDeps solution in VS and rename the solution to **NiceExampleModule**
+1. Open the ModuleOne solution in VS and rename the solution to **NiceExampleModule**
 2. Rename the NewModuleWithSourceDeps project to **NiceExampleModule**
 3. Rename the NewModuleWithSourceDepsCuda project to **NiceExampleModuleCuda**
 4. In the **NiceExampleModule** project, find **NewModuleNode.cs** and rename it to **NiceNode.cs**
