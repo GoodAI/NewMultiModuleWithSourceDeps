@@ -26,19 +26,19 @@ The Node project is located in **NiceExampleModule**\Module, the CUDA kernels ar
 1. Open the NewModuleWithSourceDeps solution in VS and rename the solution to **NiceExampleModule**
 2. Rename the NewModuleWithSourceDeps project to **NiceExampleModule**
 3. Rename the NewModuleWithSourceDepsCuda project to **NiceExampleModuleCuda**
-4. In the **NiceExampleModule** project, find **NewModuleNode.cs** and rename it to **TestNode.cs**
+4. In the **NiceExampleModule** project, find **NewModuleNode.cs** and rename it to **NiceNode.cs**
 5. Open the file and change line 13 to:
    
 	`namespace MyCompany.Modules.NiceExampleModule`
 
-6. Rename the **NewModuleNode** class to **TestNode** and **NewModuleTask** to **TestTask**
-7. In **NiceExampleModule**\conf\nodes.xml set the type to **MyCompany.Modules.NiceExampleModule.TestNode**. It should look like this:
+6. Rename the **NewModuleNode** class to **NiceNode** and **NewModuleTask** to **NiceTask**
+7. In **NiceExampleModule**\conf\nodes.xml set the type to **MyCompany.Modules.NiceExampleModule.NiceNode**. It should look like this:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <Configuration RootNamespace="MyCompany.Modules">
 	<KnownNodes>
-		<Node type="MyCompany.Modules.NiceExampleModule.TestNode" CanBeAdded="true"/>
+		<Node type="MyCompany.Modules.NiceExampleModule.NiceNode" CanBeAdded="true"/>
 	</KnownNodes>
 </Configuration>
 ```
@@ -48,4 +48,4 @@ The Node project is located in **NiceExampleModule**\Module, the CUDA kernels ar
 
 Rebuild the **NiceExampleModule** project. VS doesn't build the module project with BrainSimulator when you run it, because it's not a dependency. You need to do this manually.
 
-You should be able to load the **TestNode** in the running instance now. Check that BrainSimulator loaded MyCompany.NiceExampleModule.dll. Then use Ctrl+L to open the window listing available nodes and find your node there.
+You should be able to load the **NiceNode** in the running instance now. Check that BrainSimulator loaded MyCompany.NiceExampleModule.dll. Then use Ctrl+L to open the window listing available nodes and find your node there.
