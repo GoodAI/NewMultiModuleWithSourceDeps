@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GoodAI.NewModuleWithSourceDeps</name>
+    </assembly>
+    <members>
+        <member name="T:MyCompany.Modules.NewModuleWithSourceDeps.NewModuleNode">
+            <author>Ann Author</author>
+            <meta></meta>
+            <status>TEST</status>
+            <summary>A summary of the node's function</summary>
+            <description>A more detailed description.</description>
+        </member>
+        <member name="T:MyCompany.Modules.NewModuleWithSourceDeps.NewModuleTask">
+            <summary>
+            The task that pushes the current simulation step into the output block.
+            </summary>
+        </member>
+    </members>
+</doc>

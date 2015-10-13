@@ -14,7 +14,7 @@ namespace MyCompany.Modules.NewModuleWithSourceDeps
 {
     /// <author>Ann Author</author>
     /// <meta></meta>
-    /// <status></status>
+    /// <status>TEST</status>
     /// <summary>A summary of the node's function</summary>
     /// <description>A more detailed description.</description>
     public class NewModuleNode : MyWorkingNode
