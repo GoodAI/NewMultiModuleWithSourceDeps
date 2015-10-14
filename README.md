@@ -1,6 +1,7 @@
-Follow this guide to bootstrap a new module that references the BrainSimulator project instead of the binaries.
+Follow this guide to bootstrap a new repository suited for multiple Brain Simulator modules.
+(The sample project references Brain Simulator sources rather than binaries.)
 
-There is also [NewModuleWithSourceDeps](https://github.com/GoodAI/NewModuleWithSourceDeps/) repository.
+There is also [NewModuleWithSourceDeps](https://github.com/GoodAI/NewModuleWithSourceDeps/) template repository.
 This template is adapted to hold more independent modules in one repository (related or not).
 
 ## Choose a repository name and a module name
